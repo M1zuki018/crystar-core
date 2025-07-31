@@ -150,22 +150,22 @@ namespace CryStar.Utility
 
         private static void ApplyDarkTheme()
         {
-            LevelColors[LogLevel.Verbose] = new Color(0.5f, 0.5f, 0.5f, 1f);
-            LevelColors[LogLevel.Debug] = new Color(0.8f, 0.8f, 0.8f, 1f);
-            LevelColors[LogLevel.Info] = new Color(0.4f, 0.8f, 1f, 1f);
-            LevelColors[LogLevel.Warning] = new Color(1f, 0.8f, 0.2f, 1f);
-            LevelColors[LogLevel.Error] = new Color(1f, 0.3f, 0.3f, 1f);
-            LevelColors[LogLevel.Fatal] = new Color(1f, 0.2f, 0.8f, 1f);
-        }
-
-        private static void ApplyLightTheme()
-        {
             LevelColors[LogLevel.Verbose] = new Color(0.6f, 0.6f, 0.6f, 1f);
             LevelColors[LogLevel.Debug] = new Color(0.2f, 0.2f, 0.2f, 1f);
             LevelColors[LogLevel.Info] = new Color(0.2f, 0.4f, 0.8f, 1f);
             LevelColors[LogLevel.Warning] = new Color(0.8f, 0.6f, 0f, 1f);
             LevelColors[LogLevel.Error] = new Color(0.8f, 0.2f, 0.2f, 1f);
             LevelColors[LogLevel.Fatal] = new Color(0.6f, 0f, 0.4f, 1f);
+        }
+
+        private static void ApplyLightTheme()
+        {
+            LevelColors[LogLevel.Verbose] = new Color(0.5f, 0.5f, 0.5f, 1f);
+            LevelColors[LogLevel.Debug] = new Color(0.8f, 0.8f, 0.8f, 1f);
+            LevelColors[LogLevel.Info] = new Color(0.4f, 0.8f, 1f, 1f);
+            LevelColors[LogLevel.Warning] = new Color(1f, 0.8f, 0.2f, 1f);
+            LevelColors[LogLevel.Error] = new Color(1f, 0.3f, 0.3f, 1f);
+            LevelColors[LogLevel.Fatal] = new Color(1f, 0.2f, 0.8f, 1f);
         }
 
         private static void ApplyColorfulTheme()
