@@ -36,7 +36,6 @@ https://github.com/M1zuki018/crystar-core.git#v1.0.0
     "com.crystar.core": "https://github.com/M1zuki018/crystar-core.git",
     "com.crystar.custom-attributes": "https://github.com/M1zuki018/crystar-custom-attributes.git",
     "com.cysharp.unitask": "2.3.3",
-    "com.demigiant.dotween": "1.2.765"
   }
 }
 ```
