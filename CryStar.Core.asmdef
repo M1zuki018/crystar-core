@@ -15,9 +15,9 @@
     "defineConstraints": [],
     "versionDefines": [
         {
-            "name": "com.cysharp.unitask",
-            "expression": "2.3.0",
-            "define": "CRYSTAR_UNITASK_SUPPORT"
+            "name": "com.demigiant.dotween",
+            "expression": "",
+            "define": "DOTWEEN"
         }
     ],
     "noEngineReferences": false

@@ -18,7 +18,6 @@
   "samples": [],
   "dependencies": {
     "com.cysharp.unitask": "2.3.3",
-    "com.demigiant.dotween": "1.2.765",
     "com.crystar.custom-attributes" : "https://github.com/M1zuki018/crystar-custom-attributes.git"
   },
   "repository": {
