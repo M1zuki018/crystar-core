@@ -1,0 +1,31 @@
+{
+  "name": "com.crystar.core",
+  "version": "1.0.0",
+  "displayName": "CryStar.Core",
+  "description": "カスタムライフサイクル、サービスロケーター、ログユーティリティを含む包括的なゲーム開発フレームワークです。",
+  "unity": "2022.3",
+  "keywords": [
+    "framework",
+    "lifecycle",
+    "service-locator",
+    "logging",
+    "unity"
+  ],
+  "author": {
+    "name": "CryStar Studio",
+    "email": "mizuki170817@gmail.com"
+  },
+  "samples": [],
+  "dependencies": {
+    "com.cysharp.unitask": "2.3.3",
+    "com.demigiant.dotween": "1.2.765",
+    "com.crystar.custom-attributes" : "1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/M1zuki018/crystar-core",
+    "documentationUrl": "https://github.com/M1zuki018/crystar-cores#readme",
+    "changelogUrl": "https://github.com/M1zuki018/crystar-core/blob/main/CHANGELOG.md"
+  },
+  "license": "MIT"
+}

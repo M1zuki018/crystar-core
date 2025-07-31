@@ -1,0 +1,24 @@
+{
+    "name": "CryStar.Core",
+    "rootNamespace": "CryStar",
+    "references": [
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:53723cd49f189534fb744c0ce76573f4",
+        "GUID:f31de79e7e9250f4f919511c5ee10beb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.cysharp.unitask",
+            "expression": "2.3.0",
+            "define": "CRYSTAR_UNITASK_SUPPORT"
+        }
+    ],
+    "noEngineReferences": false
+}
