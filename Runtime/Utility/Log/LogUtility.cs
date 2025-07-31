@@ -158,22 +158,21 @@ namespace CryStar.Utility
             }
         }
 
-        // NOTE: 今回のプロジェクトでは使用しないかも
-        // /// <summary>
-        // /// ネットワーク関連ログ
-        // /// </summary>
-        // public static void LogNetwork(string operation, bool success, string details = "")
-        // {
-        //     string status = success ? "✅ SUCCESS" : "❌ FAILED";
-        //     string message = $"🌐 {operation}: {status}";
-        //     if (!string.IsNullOrEmpty(details))
-        //     {
-        //         message += $" - {details}";
-        //     }
-        //     
-        //     LogLevel level = success ? LogLevel.Info : LogLevel.Warning;
-        //     Log(level, LogCategory.Network, message);
-        // }
+        /// <summary>
+        /// ネットワーク関連ログ
+        /// </summary>
+        public static void LogNetwork(string operation, bool success, string details = "")
+        {
+            string status = success ? "✅ SUCCESS" : "❌ FAILED";
+            string message = $"🌐 {operation}: {status}";
+            if (!string.IsNullOrEmpty(details))
+            {
+                message += $" - {details}";
+            }
+            
+            LogLevel level = success ? LogLevel.Info : LogLevel.Warning;
+            Log(level, LogCategory.Network, message);
+        }
 
         /// <summary>
         /// ゲームプレイイベントログ
