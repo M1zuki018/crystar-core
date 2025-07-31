@@ -1,4 +1,4 @@
-# CryStar Custom Attributes
+# CryStar Core
 
 カスタムライフサイクル、サービスロケーター、ログユーティリティを含む包括的なゲーム開発フレームワークです。
 
