@@ -29,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Customizable Appearance**: カスタマイズ可能な色設定とフォーマット
 - **Performance Monitoring**: 組み込みパフォーマンス測定機能
 - **File Output**: オプションのファイルログ出力
-- **ScriptableObject Settings**: `LogSettings`による設定管理
+- **ScriptableObject Settings**: `LogSettings`、エディター拡張の専用パネルによる設定管理
 
 #### Utility Extensions
 - **DOTween Integration**: DOTweenのUniTask統合拡張メソッド
@@ -58,5 +58,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Notes
 - 初回リリース版
-- プロダクション対応済み
-- 完全な後方互換性保証開始

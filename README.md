@@ -7,7 +7,7 @@
 - **サービスロケーター**: シーン固有のローカルサービスとグローバルサービスの分離
 - **ログシステム**: ログカテゴリ/ログレベルなどの機能を備えたログシステム
 - **拡張メソッド**: UnityEventの拡張を用意
-- 
+-
 ## インストール
 
 ### Package Manager経由（推奨）
@@ -36,6 +36,7 @@ https://github.com/M1zuki018/crystar-core.git#v1.0.0
     "com.crystar.core": "https://github.com/M1zuki018/crystar-core.git",
     "com.crystar.custom-attributes": "https://github.com/M1zuki018/crystar-custom-attributes.git",
     "com.cysharp.unitask": "2.3.3",
+    "com.demigiant.dotween": "1.2.765"
   }
 }
 ```
@@ -90,7 +91,7 @@ ServiceLocator.Register<IPlayerService>(new PlayerService());
 var playerService = ServiceLocator.Get<IPlayerService>();
 ```
 
-### 4. ログシステムの使用
+### 4. ログシステムの使用（ベータ版）
 
 ```csharp
 using CryStar.Utility;
@@ -110,26 +111,6 @@ using (LogUtility.MeasurePerformance("Heavy Calculation"))
 LogUtility.LogGameplayEvent("PlayerDeath", "Level1", 15.5f);
 ```
 
-## 📋 アーキテクチャ概要
-
-```
-CryStar Core System
-├── Lifecycle Management
-│   ├── ILifecycleTarget      # ライフサイクル対象インターフェース
-│   ├── CustomBehaviour       # カスタムライフサイクル基底クラス
-│   └── LifecycleController   # ライフサイクル制御
-├── Service Locator
-│   ├── ServiceLocator        # サービス管理
-│   └── ServiceType          # サービス種別
-├── Logging System
-│   ├── LogUtility           # ログ出力
-│   ├── LogSettings          # ログ設定ScriptableObject
-│   └── LogColorSettings     # 色設定管理
-└── Utilities
-    ├── Extensions           # 拡張メソッド群
-    └── PrefabInstantiator   # プレハブ生成ユーティリティ
-```
-
 ## ⚙️ 設定
 
 ### LogSettingsの作成
@@ -139,6 +120,8 @@ CryStar Core System
 3. `Resources`フォルダに`LogSettings`として保存
 
 ### ログ設定のカスタマイズ
+
+設定ウィンドウは、Unityのメニューバーから `CryStar > Utility > Log Utility Settings` を選択することで開けます。
 
 ```csharp
 // 最小ログレベルの設定
@@ -158,11 +141,11 @@ LogUtility.ConfigureForRelease();
 - **DOTween 1.2.765+**
 - **CryStar.Custom Attribute 1.0.0+**
 
-## 📝 ライセンス
+## ライセンス
 
 MIT License
 
-## 📞 サポート
+## サポート
 
 Issue報告やフィードバックは[GitHubリポジトリ](https://github.com/M1zuki018/crystar-core)までお願いします。
 
