@@ -255,7 +255,8 @@ namespace CryStar.Core
 
             if (_services.ContainsKey(type))
             {
-                LogUtility.Warning($"{type.Name} は既にサービスロケーターに登録されています。上書きを行います", LogCategory.System);
+                LogUtility.Warning($"{type.Name} は既にサービスロケーターに登録されています。", LogCategory.System);
+                return;
             }
 
             _services[type] = service;
