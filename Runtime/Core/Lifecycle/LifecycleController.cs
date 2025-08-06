@@ -52,6 +52,9 @@ namespace CryStar.Core
 
                 // ライフサイクル実行
                 await ExecuteLifecycle();
+                
+                // 初期化完了を通知する
+                SceneLoadingCoordinator.NotifySceneInitializationCompleted();
 
                 LogUtility.Info("\u2705 全てのオブジェクトの初期化が完了しました", LogCategory.System);
             }
