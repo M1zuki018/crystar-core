@@ -182,6 +182,8 @@ namespace CryStar.Core
                 {
                     try
                     {
+                        if(target != null)
+                        
                         await lifecycleMethod(target);
                     }
                     catch (Exception ex)
