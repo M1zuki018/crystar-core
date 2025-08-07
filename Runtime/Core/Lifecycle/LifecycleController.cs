@@ -51,12 +51,7 @@ namespace CryStar.Core
                 }
 
                 // ライフサイクル実行
-                await ExecuteLifecycle();
-                
-                // 初期化完了を通知する
-                SceneLoadingCoordinator.NotifySceneInitializationCompleted();
-
-                LogUtility.Info("\u2705 全てのオブジェクトの初期化が完了しました", LogCategory.System);
+                await ExecuteProcessAsync();
             }
             catch (Exception ex)
             {
@@ -87,6 +82,20 @@ namespace CryStar.Core
 
         #endregion
 
+        /// <summary>
+        /// 非同期的にライフサイクルの実行プロセスを行う
+        /// </summary>
+        private async UniTask ExecuteProcessAsync()
+        {
+            // ライフサイクル実行
+            await ExecuteLifecycle();
+                
+            // 初期化完了を通知する
+            SceneLoadingCoordinator.NotifySceneInitializationCompleted();
+
+            LogUtility.Info("\u2705 全てのオブジェクトの初期化が完了しました", LogCategory.System);
+        }
+        
         /// <summary>
         /// ライフサイクルを実行する
         /// </summary>
