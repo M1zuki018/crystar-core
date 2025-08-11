@@ -202,6 +202,46 @@ namespace CryStar.Core
             // 次にグローバルを確認
             return _globalInstance?.IsServiceRegistered<T>() ?? false;
         }
+        
+        /// <summary>
+        /// 指定されたサービスタイプの全てのサービスをクリア
+        /// </summary>
+        /// <param name="serviceType">クリアするサービスの種類（Global/Local）</param>
+        public static void ClearAllServices(ServiceType serviceType = ServiceType.Global)
+        {
+            if (serviceType == ServiceType.Global)
+            {
+                Global?.ClearAllServices();
+            }
+            else
+            {
+                Local?.ClearAllServices();
+            }
+        }
+
+        /// <summary>
+        /// グローバルサービスの全てをクリア
+        /// </summary>
+        public static void ClearAllGlobalServices()
+        {
+            _globalInstance?.ClearAllServices();
+        }
+
+        /// <summary>
+        /// ローカルサービスの全てをクリア
+        /// </summary>
+        public static void ClearAllLocalServices()
+        {
+            _localInstance?.ClearAllServices();
+        }
+
+        /// <summary>
+        /// 全てのServiceLocator（GlobalとLocal）からサービスをクリア
+        /// </summary>
+        public static void ClearAllServicesEverywhere()
+        {
+            _globalInstance?.ClearAllServices();
+            _localInstance?.ClearAllServices();
 
         /// <summary>
         /// 登録されているサービスをログ出力
